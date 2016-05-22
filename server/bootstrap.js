@@ -1,7 +1,9 @@
 Meteor.startup(function(){
 
   if(Polls.find().count()==0){
-    var samplePolls = [{
+
+    var samplePolls = [
+      {
       questions: "Its not awesome",
       choices:[
         {text:"Maybe",votes:0},
